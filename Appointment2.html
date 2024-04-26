@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Appointment.css" type="text/css" rel="stylesheet">
+    <script src="Appointment2.js"></script>
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid;
+            border-collapse: collapse;
+            min-width: 100px
+        }
+    </style>
+
+</head>
+
+<body>
+    <table style="width: auto;">
+        <caption>
+            <font size="5">Doctors information</font>
+        </caption>
+
+        <tr>
+            <th>Doctor Name</th>
+            <th>Field</th>
+        </tr>
+
+        <tr>
+            <td>Dr.Paul</td>
+            <td>ENT</td>
+        </tr>
+
+        <tr>
+            <td>Dr.Raza</td>
+            <td>Chest</td>
+        </tr>
+
+        <tr>
+            <td>Dr.Christ</td>
+            <td>Heart</td>
+        </tr>
+
+        <tr>
+            <td>Dr.Top</td>
+            <td>Eye</td>
+        </tr>
+    </table>
+
+<br>
+<br>
+
+<form>
+    <p>
+        <font size="6">Select your doctor:</font>
+    </p>
+    <input type="radio" id="rad1" name="schedule" value="patient">
+    <label for="rad1">Dr.Paul- Mondays Morning 9:00 AM</label><br>
+    <input type="radio" id="rad2" name="schedule" value="patient">
+    <label for="rad2">Dr.Raza- Tuesdays Evening 5:00 PM</label><br>
+    <input type="radio" id="rad3" name="schedule" value="patient">
+    <label for="rad3">Dr.Christ- Mondays Evening 4:00 PM</label><br>
+    <input type="radio" id="rad4" name="schedule" value="patient">
+    <label for="rad4">Dr.Top- Fridays Evening 6:00 AM</label><br> <br> <br>
+    <!-- <input type="submit"> -->
+    <br>
+    <br>
+    <br>
+</form>
+
+<form name="Form" action="">
+    <label for="name">Enter name:</label>
+    <input type="text" name="name"> <br> <br>
+    <label for="id">Gender:</label>
+    <input type="text" name="id" required>
+    <!-- <input type="submit" value="Appointment Confirmed"> -->
+</form>
+
+<br>
+<br>
+
+<button id="b1">Confirm Appointment</button>
+<!-- Script for first button -->
+<script>
+    const listen_button1 = document.getElementById('b1');
+    listen_button1.addEventListener('click', change);
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
+<p id="printAppointment"> </p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+    
+<p id="goback"> <a href="index.html">
+    <font size="5">Back to Main Page</font>
+
+    
+</a></p>
+
+
+
+</body>
+</html>
